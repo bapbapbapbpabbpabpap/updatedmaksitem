@@ -300,8 +300,17 @@ genmenu(
 )
 genmenu(
     "toolsR3P2",
-    "suku"
+    "suku",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
     "< Back -",
+    "- Page 2 -"
 )
 
 -- vehicles
@@ -774,9 +783,9 @@ local function hotkeyGiver(v)
         elseif v == k5 then
             itemGiver("yooo chocolate")
         elseif v == k6 then
-             itemGiver("gingerbread")
+            itemGiver("gingerbread")
         elseif v == k7 then
-             itemGiver("cookiecookie")
+            itemGiver("cookiecookie")
         elseif v == k8 then
 
         elseif v == k9 then
@@ -860,7 +869,22 @@ local function hotkeyGiver(v)
     elseif gui.toolsR3P2.Visible then
         if v == k1 then
             itemGiver("suku")
-          
+        elseif v == k2 then
+            -- goto page 1
+	elseif v == k3 then
+            -- goto page 1
+	elseif v == k4 then
+            -- goto page 1
+	elseif v == k5 then
+            -- goto page 1
+	elseif v == k6 then
+            -- goto page 1
+	elseif v == k7 then
+            -- goto page 1
+	elseif v == k8 then
+            -- goto page 1
+	elseif v == k9 then
+            -- goto page 1   
         end
 
 
@@ -883,7 +907,7 @@ local function hotkeyGiver(v)
         elseif v == k8 then
             itemGiver("Wheelchair")
         elseif v == k9 then
-
+	
         end
 
         -- Event
