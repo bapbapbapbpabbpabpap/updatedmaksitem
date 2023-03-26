@@ -240,8 +240,8 @@ genmenu(
     "Watermelon",
     "flancake",
     "yooo chocolate",
-    "",
-    "",
+    "gingerbread",
+    "cookiecookie",
     "",
     "< Page 2 -"
 )
@@ -275,7 +275,7 @@ genmenu(
     "toolsR2P3",
     "BoomboxGun",
     "Breaker",
-    "",
+    "candycane",
     "",
     "",
     "",
@@ -296,6 +296,12 @@ genmenu(
     "ClownpieceRocket",
     "Fishing Rod",
     "Bucket"
+    "- Next >"
+)
+genmenu(
+    "toolsR3P2",
+    "suku"
+    "< Back -",
 )
 
 -- vehicles
@@ -335,7 +341,7 @@ genmenu(
 
 
 genmenu("utools", "radar", "cloudplant", "blal", "Pagoda")
-genmenu("atools", "Infinite Gravity Gun", "ASCENSIONIST", "Immortality Lord", "NORMALIFYSCENSIONIST", "Megaphone", "Lost")
+genmenu("atools", "Infinite Gravity Gun", "ASCENSIONIST", "Immortality Lord", "NORMALIFYSCENSIONIST", "Megaphone", "Lost", "STARGLITCHER")
 
 genmenu("options", "Equip after received: false")
 
@@ -768,9 +774,9 @@ local function hotkeyGiver(v)
         elseif v == k5 then
             itemGiver("yooo chocolate")
         elseif v == k6 then
-
+             itemGiver("gingerbread")
         elseif v == k7 then
-
+             itemGiver("cookiecookie")
         elseif v == k8 then
 
         elseif v == k9 then
@@ -824,6 +830,8 @@ local function hotkeyGiver(v)
             itemGiver("BoomboxGun")
         elseif v == k2 then
             itemGiver("Breaker")
+	elseif v == k3 then
+            itemGiver("candycane")
         end
 
 
@@ -847,6 +855,12 @@ local function hotkeyGiver(v)
             itemGiver("Fishing Rod")
         elseif v == k9 then
             itemGiver("Bucket")
+	    -- goto page 2
+        end
+    elseif gui.toolsR3P2.Visible then
+        if v == k1 then
+            itemGiver("suku")
+          
         end
 
 
@@ -955,7 +969,7 @@ local function hotkeyGiver(v)
         elseif v == k6 then
             itemGiver("Lost")
         elseif v == k7 then
-
+            itemGiver("STARGLITCHER")
         elseif v == k8 then
 
         elseif v == k9 then
